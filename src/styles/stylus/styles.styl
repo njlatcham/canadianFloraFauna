@@ -1,0 +1,153 @@
+html, body {
+  height: 100%
+  width: 100%
+  padding: 0
+  margin: 0
+  background: #fff
+  color: #000
+  font-size: 10px
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+}
+
+h1, h2, h3, h4, h5, p {
+  padding: 0
+  margin: 0
+  color: #cf0017
+  font-family: 'Lato', sans-serif
+}
+
+a:visited {
+  color: inherit
+}
+
+* {
+  box-sizing: border-box
+}
+
+.header {
+  padding: 30px 100px
+  display: flex
+  justify-content: space-between
+  color: #cf0017
+
+  .mainTitle {
+    
+    a {
+      text-decoration: none
+      display: flex
+      flex-direction: row
+      align-items: center
+      
+      img {
+        height: 75px
+        width: 75px
+        margin-right: 25px
+      }
+      
+      h1 {
+        font-size: 6rem
+        color: #cf0017
+        font-family: 'Lato', sans-serif
+        font-weight: 700
+        text-transform: uppercase
+      }
+    }
+  }
+  
+  .navigation {
+    display: flex
+    width: 33%
+    justify-content: space-between
+    align-items: center
+    
+    a {
+      text-decoration: none
+      font-size: 2.8rem
+      font-family: 'Lato', sans-serif
+      transition: 0.5s
+      border-bottom: 2px solid transparent
+      
+      &:hover {
+        border-bottom: 2px solid #cf0017
+      }
+    }
+  }
+}
+
+.background-image {
+  width: 100%
+  height: calc(1050px - 135px)
+  background-image: url('../../assets/imgs/DSC_2403.jpeg')
+  background-position: center
+  background-size: cover
+  position: relative
+  
+  .photo-creds {
+    position: absolute
+    bottom: 75px
+    right: 10px
+    color: #fff
+    font-size: 1.6rem
+  }
+}
+
+.kingdoms {
+  margin: 0px 300px
+  display: flex
+  justify-content: space-around
+  
+  .animalia-card, .plantae-card {
+    position: absolute
+    width: 33.3%
+    max-width: 450px
+    padding: 25px 25px
+    height: 400px
+    box-shadow: 0 0 40px 0px
+    background-color: #fff
+    
+    .animalia-header, .plantae-header {
+      display: flex
+      align-items: center
+      justify-content: space-between
+      border-bottom: 2px solid #cf0017
+      
+      .latin {
+        font-style: italic
+      }
+      
+      h5 {
+        font-size: 2rem
+      }
+      
+      h2 {
+        font-size: 4rem
+      }
+      
+      h3 {
+        font-size: 3rem
+      }
+    }
+  }
+  
+  .animalia-card {
+    bottom: -300px
+    left: 20vw
+    transition: 0.5s
+    
+    &:hover {
+      bottom: -200px
+    }
+  }
+  
+  .plantae-card {
+    bottom: -300px
+    right: 20vw
+    transition: 0.5s
+    
+    &:hover {
+      bottom: -200px
+    }
+  }
+}
